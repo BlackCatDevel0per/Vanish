@@ -1,0 +1,31 @@
+ #  _   _       _   _           _____             
+ # | \ | |     | | (_)         |  __ \            
+ # |  \| | __ _| |_ ___   _____| |  | | _____   __
+ # | . ` |/ _` | __| \ \ / / _ \ |  | |/ _ \ \ / /
+ # | |\  | (_| | |_| |\ V /  __/ |__| |  __/\ V / 
+ # |_| \_|\__,_|\__|_| \_/ \___|_____/ \___| \_/  
+ #
+ # Больше плагинов в https://vk.com/native_dev
+ # По вопросам native.dev@mail.ru
+ 
+name: Vanish
+main: blackcatdev\Vanish\Vanish
+version: 1.0.0
+description: Плагин для операторов, админов и донатеров серверов для режима невидимки
+api:
+- 3.0.0
+
+author: BlackCat Developer
+website: https://vk.com/native_dev
+
+load: POSTWORLD
+
+commands:
+  vanish:
+    permission: vanish.cmd
+    description: Режим невидимки
+permissions:
+  vanish.cmd:
+    default: op
+  vanish.other:
+    default: op
